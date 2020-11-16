@@ -1,6 +1,6 @@
-const { PromotionTextDecorator } = require('../before-refactor/PromotionTextDecorator');
+const { PromotionTextDecorator } = require('../../after-refactor/PromotionTextDecorator');
 
-describe('#decorate', () => {
+describe('#decorate after refactoring', () => {
   describe('Given a product that is not promoted', () => {
     describe('When the product has no free shipping nor discount', () => {
       it('Should generate a promotion description identical to its description', () => {
